@@ -148,7 +148,7 @@ User Endpoints:
 
 Database schema:
 
-![DB Screenshot](https://templars.guru/app/github/shop_api/1.png)
+![DB Screenshot](https://github.com/antoineratat/github_docs/blob/main/shop_api/1.png?raw=true)
 
 ## Technologies<a name="technologies"></a>
 
