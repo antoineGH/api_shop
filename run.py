@@ -5,6 +5,7 @@ from flask_cors.core import serialize_option
 from flask_mail import Message, Mail
 import os
 import json
+from dotenv import load_dotenv
 import datetime
 import random
 import string
@@ -22,6 +23,8 @@ import stripe
 #     config = json.load(config_file)
 
 # --- INFO: APP CONFIGURATION ---
+
+load_dotenv() 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('HEROKU_DATABASE')
