@@ -43,7 +43,7 @@ db = SQLAlchemy(app)
 mail = Mail(app)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+cors = CORS(app, resources={r"/api/*": {"origins": "https://antoine.ratat.xyz"}})
 stripe.api_key = os.environ.get('SRIPE_API_KEY')
 
 # --- INFO: DATABASE MODEL ---
