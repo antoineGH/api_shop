@@ -2,11 +2,11 @@
 
 ## Table of contents
 
--   [General info](#general-info)
--   [Features](#features)
--   [API Endpoints](#api-endpoints)
--   [Technologies](#technologies)
--   [Setup](#setup)
+- [General info](#general-info)
+- [Features](#features)
+- [API Endpoints](#api-endpoints)
+- [Technologies](#technologies)
+- [Setup](#setup)
 
 ## General info<a name="general-info"></a>
 
@@ -18,26 +18,26 @@ Finance API is a REST API built with Flask & SQLAlchemy to operate CRUD operatio
 
 User account is only available after the first login with User account authenticated with User JWT
 
--   Allow user to create an account
--   Allow user to login
--   Allow user to disconnect
--   Allow user to save information in the database
--   Allow the user to update or delete their information (name, password, address, etc…)
--   Allow user to delete their account
--   Allow user to reset their password through Email
--   Allow user to upload a profile picture
--   Allow user to save setting in the database
--   Allow user to update or delete their settings (theme, default currency)
+- Allow user to create an account
+- Allow user to login
+- Allow user to disconnect
+- Allow user to save information in the database
+- Allow the user to update or delete their information (name, password, address, etc…)
+- Allow user to delete their account
+- Allow user to reset their password through Email
+- Allow user to upload a profile picture
+- Allow user to save setting in the database
+- Allow user to update or delete their settings (theme, default currency)
 
 ### Admin features
 
 Admin features are only available to Admin account authenticated with Admin JWT
 
--   Allow admin to get a list of existing users
--   Allow admin to update specific user information
--   Allow admin to update specific user setting
--   Allow admin to delete a specific user
--   Allow admin to create specific user
+- Allow admin to get a list of existing users
+- Allow admin to update specific user information
+- Allow admin to update specific user setting
+- Allow admin to delete a specific user
+- Allow admin to create specific user
 
 ## API Endpoints<a name="api-endpoints"></a>
 
@@ -47,104 +47,104 @@ After running the server, consult Documentation at :
 
 Admin Endpoints:
 
--   Category
+- Category
 
-    -   Return JSON with all categories
-    -   Post new category from JSON
-    -   Return JSON selected category
-    -   Update selected category from JSON
-    -   Delete selected category
+  - Return JSON with all categories
+  - Post new category from JSON
+  - Return JSON selected category
+  - Update selected category from JSON
+  - Delete selected category
 
--   Product
+- Product
 
-    -   Return JSON with all products
-    -   Post new product from JSON
-    -   Return JSON selected product
-    -   Update selected product from JSON
-    -   Delete selected product
+  - Return JSON with all products
+  - Post new product from JSON
+  - Return JSON selected product
+  - Update selected product from JSON
+  - Delete selected product
 
--   User
+- User
 
-    -   Return JSON with all users
-    -   Post new user and userdetail from JSON
-    -   Return JSON selected user
-    -   Update selected user and userdetail from JSON
-    -   Delete selected user
+  - Return JSON with all users
+  - Post new user and userdetail from JSON
+  - Return JSON selected user
+  - Update selected user and userdetail from JSON
+  - Delete selected user
 
--   UserDetails
+- UserDetails
 
-    -   Return JSON with all userdetails
-    -   Return JSON selected userdetail
+  - Return JSON with all userdetails
+  - Return JSON selected userdetail
 
--   Order
+- Order
 
-    -   Return JSON with all orders
-    -   Post new order from JSON
-    -   Return JSON selected order
-    -   Update selected order from JSON
-    -   Delete selected order
+  - Return JSON with all orders
+  - Post new order from JSON
+  - Return JSON selected order
+  - Update selected order from JSON
+  - Delete selected order
 
--   OrderDetails
+- OrderDetails
 
-    -   Return JSON with all orderdetails
-    -   Post new orderdetail from JSON
-    -   Return JSON selected orderdetail
-    -   Update selected orderdetail from JSON
-    -   Delete selected orderdetail
+  - Return JSON with all orderdetails
+  - Post new orderdetail from JSON
+  - Return JSON selected orderdetail
+  - Update selected orderdetail from JSON
+  - Delete selected orderdetail
 
--   CartDetails
+- CartDetails
 
-    -   Return JSON with all cartdetails
-    -   Post new cartdetail from JSON
-    -   Return JSON selected cartdetail
-    -   Update selected cartdetail from JSON
-    -   Delete selected cartdetail
+  - Return JSON with all cartdetails
+  - Post new cartdetail from JSON
+  - Return JSON selected cartdetail
+  - Update selected cartdetail from JSON
+  - Delete selected cartdetail
 
--   Delivery
+- Delivery
 
-    -   Return JSON with all deliveries
-    -   Post new delivery from JSON
-    -   Return JSON selected delivery
-    -   Update selected delivery from JSON
-    -   Delete selected delivery
+  - Return JSON with all deliveries
+  - Post new delivery from JSON
+  - Return JSON selected delivery
+  - Update selected delivery from JSON
+  - Delete selected delivery
 
--   Payment
-    -   Return JSON with all payments
-    -   Post new payment from JSON
-    -   Return JSON selected payment
-    -   Update selected payment from JSON
-    -   Delete selected payment
+- Payment
+  - Return JSON with all payments
+  - Post new payment from JSON
+  - Return JSON selected payment
+  - Update selected payment from JSON
+  - Delete selected payment
 
 User Endpoints:
 
--   User Auth Management
+- User Auth Management
 
-    -   Return JSON with Access TOKEN
-    -   Send Email set Password
-    -   Send Email set Password
-    -   Set/Update password
+  - Return JSON with Access TOKEN
+  - Send Email set Password
+  - Send Email set Password
+  - Set/Update password
 
--   User CRUD
+- User CRUD
 
-    -   Return JSON with user and userdetails
-    -   Update selected user from JSON
-    -   Delete selected user
+  - Return JSON with user and userdetails
+  - Update selected user from JSON
+  - Delete selected user
 
--   UserDetails CRUD
+- UserDetails CRUD
 
-    -   Return JSON with all userdetails for user
-    -   Add userdetails to user
-    -   Get selected userdetail
-    -   Update selected userdetail from JSON
-    -   Delete selected userdetail
+  - Return JSON with all userdetails for user
+  - Add userdetails to user
+  - Get selected userdetail
+  - Update selected userdetail from JSON
+  - Delete selected userdetail
 
--   Orders / Carts / Products / Category CRUD
-    -   Return JSON with categories
-    -   Return JSON with products
-    -   Return JSON with single product
-    -   Return JSON with orders for user
-    -   Return JSON with cart for user
-    -   Add to Cart for user
+- Orders / Carts / Products / Category CRUD
+  - Return JSON with categories
+  - Return JSON with products
+  - Return JSON with single product
+  - Return JSON with orders for user
+  - Return JSON with cart for user
+  - Add to Cart for user
 
 Database schema:
 
@@ -154,41 +154,41 @@ Database schema:
 
 Project is created with:
 
--   python V3.9.0
--   astroid V2.4.2
--   bcrypt V3.2.0
--   blinker V1.4
--   certifi V2020.12.5
--   cffi V1.14.4
--   chardet V4.0.0
--   click V7.1.2
--   colorama V0.4.4
--   Flask V1.1.2
--   Flask-Bcrypt V0.7.1
--   Flask-Cors V3.0.9
--   Flask-JWT-Extended V3.25.0
--   Flask-Mail V0.9.1
--   Flask-SQLAlchemy V2.4.4
--   gunicorn V20.0.4
--   idna V2.10
--   isort V5.6.4
--   itsdangerous V1.1.0
--   Jinja2 V2.11.2
--   lazy-object-proxy V1.4.3
--   MarkupSafe V1.1.1
--   mccabe V0.6.1
--   psycopg2 V2.8.6
--   pycparser V2.20
--   PyJWT V1.7.1
--   pylint V2.6.0
--   requests V2.25.1
--   six V1.15.0
--   SQLAlchemy V1.3.20
--   stripe V2.55.1
--   toml V0.10.2
--   urllib3 V1.26.2
--   Werkzeug V1.0.1
--   wrapt V1.12.1
+- python V3.9.0
+- astroid V2.4.2
+- bcrypt V3.2.0
+- blinker V1.4
+- certifi V2020.12.5
+- cffi V1.14.4
+- chardet V4.0.0
+- click V7.1.2
+- colorama V0.4.4
+- Flask V1.1.2
+- Flask-Bcrypt V0.7.1
+- Flask-Cors V3.0.9
+- Flask-JWT-Extended V3.25.0
+- Flask-Mail V0.9.1
+- Flask-SQLAlchemy V2.4.4
+- gunicorn V20.0.4
+- idna V2.10
+- isort V5.6.4
+- itsdangerous V1.1.0
+- Jinja2 V2.11.2
+- lazy-object-proxy V1.4.3
+- MarkupSafe V1.1.1
+- mccabe V0.6.1
+- psycopg2 V2.8.6
+- pycparser V2.20
+- PyJWT V1.7.1
+- pylint V2.6.0
+- requests V2.25.1
+- six V1.15.0
+- SQLAlchemy V1.3.20
+- stripe V2.55.1
+- toml V0.10.2
+- urllib3 V1.26.2
+- Werkzeug V1.0.1
+- wrapt V1.12.1
 
 ## Setup<a name="setup"></a>
 
@@ -197,7 +197,7 @@ Project is created with:
 ```
 $ git clone https://github.com/antoineratat/api_shop.git
 $ py -3 -m venv venv
-$ venv\Script\Activate
+$ source venv\bin\Activate
 $ cd shop_api
 $ pip install -r requirements.txt
 ```
