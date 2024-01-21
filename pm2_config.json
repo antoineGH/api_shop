@@ -1,0 +1,18 @@
+{
+  "apps": [
+    {
+      "name": "shop",
+      "cwd": "/var/www/api_shop",
+      "script": "gunicorn --workers=3 -b unix:/var/www/api_shop/mysock2.sock wsgi:app",
+      "watch": false,
+      "max_memory_restart": "256M",
+      "output": "/var/www/api_shop/logs/shop-out.log",
+      "error": "/var/www/api_shop/logs/shop-error.log",
+      "kill_timeout": 5000,
+      "restart_delay": 5000,
+      "env": {
+        "PATH": "/var/www/api_shop/venv/bin"
+      }
+    }
+  ]
+}
