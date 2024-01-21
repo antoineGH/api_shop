@@ -11,7 +11,7 @@
       "kill_timeout": 5000,
       "restart_delay": 5000,
       "env": {
-        "PATH": "/var/www/api_shop/venv/bin"
+        "PATH": "/home/administrator/.nvm/versions/node/v20.10.0/bin/pm2:/var/www/api_shop/venv/bin"
       }
     }
   ]
